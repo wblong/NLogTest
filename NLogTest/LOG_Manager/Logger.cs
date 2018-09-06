@@ -37,7 +37,7 @@ namespace NLogTest.LOG
 
         public void Debug(string msg, Exception err)
         {
-            logger.Debug(msg, err.Message);
+            logger.Debug(err,msg);
         }
 
         public void Info(string msg, params object[] args)
@@ -47,7 +47,7 @@ namespace NLogTest.LOG
 
         public void Info(string msg, Exception err)
         {
-            logger.Info(msg, err.Message);
+            logger.Info(err, msg);
         }
 
         public void Trace(string msg, params object[] args)
@@ -57,7 +57,7 @@ namespace NLogTest.LOG
 
         public void Trace(string msg, Exception err)
         {
-            logger.Trace(msg, err.Message);
+            logger.Trace(err, msg);
         }
 
         public void Error(string msg, params object[] args)
@@ -67,7 +67,7 @@ namespace NLogTest.LOG
 
         public void Error(string msg, Exception err)
         {
-            logger.Error(msg, err.Message);
+            logger.Error(err, msg);
         }
 
         public void Fatal(string msg, params object[] args)
@@ -77,7 +77,7 @@ namespace NLogTest.LOG
 
         public void Fatal(string msg, Exception err)
         {
-            logger.Fatal(msg, err.Message);
+            logger.Fatal(err, msg);
         }
     }
 }
